@@ -16,7 +16,7 @@
 			outputStr = document.getElementById("encoded").value;
 			iter = parseInt(atob(outputStr)[atob(outputStr).length - 1]);
 			outputStr = atob(outputStr);
-			outputStr = outputStr.slice(0, outputStr.length - 2);
+			outputStr = outputStr.slice(0, -1);
 			for (var i = 1; i < iter; i++) {
 				outputStr = atob(outputStr);
 			}
